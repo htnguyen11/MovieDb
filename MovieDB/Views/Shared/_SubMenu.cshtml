@@ -1,0 +1,35 @@
+﻿
+<div class="cat-menu tax">
+    <ul id="menu-sub-menu" class="menu">
+
+        <li>
+            <div id="search">
+
+                <div class="wrapper">
+
+                    <div class="inner">
+
+                        <!-- SEARCH -->
+                        <form method="get" id="searchformtop" action="search.php">
+                            <input type="text" value="search" onfocus="if (this.value == 'search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'search';}" name="s" id="s" />
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li><a href="index-full-width.php">Full-Width Homepage</a></li>
+        <li>@Html.ActionLink("Search Result","SearchResult","Home")</li>
+        <li><a href="404.php">404 page</a></li>
+        <li>@Html.ActionLink("Single Review", "SingleReview","Home")</li>
+        <li><a href="page-full-width.php">Full-Width Page</a></li>
+        <li><a href="page-contributors.php">Contributors Listing</a></li>
+    </ul>
+</div>
+
+<br class="clearer hide-responsive-small" />

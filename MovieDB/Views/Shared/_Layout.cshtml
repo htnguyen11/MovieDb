@@ -1,0 +1,61 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Made HTML Theme</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+
+    @Styles.Render("~/Content/css")
+
+    <!--<link rel="stylesheet" href="style.css" type="text/css" /> <!-- the main structure and main page elements style -->
+
+    <link rel="stylesheet" href="~/Scripts/js/js.css" type="text/css" media="screen" /> <!-- styles for the various jquery plugins -->
+
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.3.1'></script>
+
+</head>
+
+
+<body>
+    @Html.Partial("_TopMenu")
+
+    <div id = "page-wrapper">
+
+        @Html.Partial("_MainHeaderLogo")
+        @Html.Partial("_MainMenu")
+        @Html.Partial("_SubMenu")
+
+        @Html.Partial("_DontMiss")
+        <div id= "main-wrapper">
+
+        <div id="main-wrapper-dark">
+               
+            <div class="main-content-left">
+
+                @RenderBody()
+            </div>
+
+            <div class ="sidebar">
+                @Html.Partial("_SideBar")
+            </div>
+            <br class="clearer" />
+
+            
+        </div>
+
+        </div>
+        @Html.Partial("_Footer")
+
+   </div>
+</body>
+</html>
